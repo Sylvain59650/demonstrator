@@ -1,0 +1,26 @@
+{
+  "name": "demonstrator",
+  "version": "0.5.0",
+  "description": "CSS & js for make a demo",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylvain59650/demonstrator.git"
+  },
+  "keywords": [
+    "demonstrator",
+    "front-end"
+  ],
+  "author": "Sylvain LONGEPEE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sylvain59650/demonstrator/issues"
+  },
+  "homepage": "https://github.com/Sylvain59650/demonstrator#readme"
+}
