@@ -8,12 +8,19 @@
 </head>
 
 <body>
+  <label>Country</label><select id="country"></select>
   <script>
     function loadCountry() {
       var url = "https://datarefs.lesprojets.net/countryCtrl.php";
-      document.getJSON(url, function(result) {
+      document.getJSON(url, function(data) {
         debugger;
-        var aa = result;
+        var select = qsi("country");
+        data.forEach(element => {
+          var option = newElement("option");
+          option.text = element.Name;
+          option.value = element.ISO3166;
+          select.add(option);
+        });
       });
     }
     document.ready(function() {
