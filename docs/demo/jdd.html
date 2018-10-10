@@ -16,6 +16,7 @@
       var url = "https://datarefs.lesprojets.net/countryCtrl.php";
       document.getJSON(url, function(data) {
         var select = qsi("country");
+        select.options.length = 0;
         data.forEach(element => {
           var option = newElement("option");
           option.text = element.Name;
@@ -29,6 +30,7 @@
       var url = "https://datarefs.lesprojets.net/townCtrl.php?CP=" + zipCode;
       document.getJSON(url, function(data) {
         var City = qsi("City");
+        City.options.length = 0;
         data.forEach(element => {
           var option = newElement("option");
           option.text = element.Ville;
