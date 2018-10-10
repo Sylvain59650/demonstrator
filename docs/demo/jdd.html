@@ -15,7 +15,6 @@
     function loadCountry() {
       var url = "https://datarefs.lesprojets.net/countryCtrl.php";
       document.getJSON(url, function(data) {
-        debugger;
         var select = qsi("country");
         data.forEach(element => {
           var option = newElement("option");
