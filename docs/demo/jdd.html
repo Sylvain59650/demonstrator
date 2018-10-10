@@ -28,7 +28,7 @@
 
     function searchCity(zipCode) {
       var url = "https://datarefs.lesprojets.net/townCtrl.php?CP=" + zipCode;
-      document.getJson(url, function(data) {
+      document.getJSON(url, function(data) {
         var City = qsi("City");
         data.forEach(element => {
           var option = newElement("option");
