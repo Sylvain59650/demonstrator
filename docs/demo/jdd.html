@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/htmlelement-extension@0.8.8/distrib/htmlElement.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/htmlelement-events-extension@0.9.8/distrib/htmlElement-events.min.js"></script>
+  <link href="https://sylvain59650.github.io/demonstrator/css/style.css" type="text/css" rel="stylesheet" />
+  <link href="https://sylvain59650.github.io/demonstrator/css/demo.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <script>
+    function loadCountry() {
+      var url = "https://datarefs.lesprojets.net/countryCtrl.php";
+      document.getJSON(url, function(result) {
+        debugger;
+        var aa = result;
+      });
+    }
+    document.ready(function() {
+      loadCountry();
+    });
+  </script>
+</body>
+
+</html>
