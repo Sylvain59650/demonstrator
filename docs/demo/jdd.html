@@ -9,6 +9,8 @@
 
 <body>
   <label>Country</label><select id="country"></select>
+
+  <label>French ZipCode</label><input type="text" id="ZipCode" /> <select id="City"></select>
   <script>
     function loadCountry() {
       var url = "https://datarefs.lesprojets.net/countryCtrl.php";
@@ -23,8 +25,31 @@
         });
       });
     }
+
+    function searchCity(zipCode) {
+      var url = "https://datarefs.lesprojets.net/townCtrl.php?CP=" + zipCode;
+      document.getJson(url, function(data) {
+        var City = qsi("City");
+        data.forEach(element => {
+          var option = newElement("option");
+          option.text = element.Ville;
+          option.value = element.CodeInsee;
+          select.add(option);
+        });
+      })
+    }
+
+    function findCity() {
+      var zipCode = qsi("ZipCode");
+      if (zipCode.value.length >= 3) {
+        searchCity(zipCode.value);
+      }
+    }
+
     document.ready(function() {
       loadCountry();
+
+      qsi("ZipCode").on("keyup", findCity);
     });
   </script>
 </body>
