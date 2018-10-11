@@ -137,6 +137,26 @@ p.code {
   margin-bottom: 10px;
 }
 
+
+  .breadcrumb a {
+      text-decoration: none;
+      color: darkblue;
+    }
+    
+    .breadcrumb a:hover {
+      text-decoration: underline;
+      color: darkcyan;
+    }
+    
+    .breadcrumb h1 {
+      display: inline-block;
+      color: darkblue;
+    }
+    
+    .breadcrumb h1:before {
+      content: " > "
+    }
+	
 legend {
   background-color: rgb(193, 245, 97);
   border-radius: 10px 0px 10px 0px;
