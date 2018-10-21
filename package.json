@@ -1,6 +1,6 @@
 {
   "name": "demonstrator",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "CSS & js for make a demo",
   "main": "index.html",
   "directories": {
@@ -17,7 +17,13 @@
     "demonstrator",
     "front-end"
   ],
-  "author": "Sylvain LONGEPEE",
+  "author": "sylvain59",
+  "maintainers": [
+    {
+      "name": "sylvain59",
+      "email": "slongepee@laposte.net"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Sylvain59650/demonstrator/issues"
