@@ -55,9 +55,19 @@ h2 {
   margin-right: 20px;
 }
 
+.signature:before {
+  clear: left;
+  content: "Signature";
+}
+
 .arg {
   display: flex;
   background-color: darksalmon
+}
+
+.arg:before {
+  clear: left;
+  content: "Arguments";
 }
 
 .arg>p {
