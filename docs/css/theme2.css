@@ -1,0 +1,61 @@
+/* combine with demo.css & style.css*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 25pt;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.signature>p {
+  margin-left: 25px;
+  background-color: #ffffff;
+  vertical-align: text-bottom;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: royalblue;
+  font-size: 12pt;
+}
+
+.signature {
+  font-weight: bolder;
+  background-color: dodgerblue;
+  color: black;
+  display: flex;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  font-size: 10pt;
+  margin-right: 20px;
+}
+
+.arg {
+  display: flex;
+  background-color: darksalmon
+}
+
+.arg>p {
+  margin-left: 15px;
+  background-color: #ffffff;
+  vertical-align: text-bottom;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: royalblue;
+  font-size: 12pt;
+  display: block;
+  padding-bottom: 5px;
+}
+
+nav>li {
+  display: inline;
+  max-width: 30%;
+  border-radius: 0;
+}
