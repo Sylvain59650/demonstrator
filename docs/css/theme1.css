@@ -61,7 +61,6 @@ h2 {
 }
 
 .arg {
-  display: flex;
   background-color: darksalmon
 }
 
@@ -129,6 +128,26 @@ h2 {
   content: "Example";
 }
 
+   .return {
+        background-color: gold;
+      }
+      
+      .return:before {
+        clear: both;
+        content: "Returns"
+      }
+      
+      .return>p {
+        margin-left: 85px;
+        margin-top: -18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 11pt;
+        display: block;
+        padding-bottom: 5px;
+        font-weight: 500;
+      }
+	  
 xmp {
   background-color: black;
   color: white;
