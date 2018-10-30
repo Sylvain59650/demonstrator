@@ -128,26 +128,37 @@ h2 {
   content: "Example";
 }
 
-   .return {
-        background-color: gold;
-      }
-      
-      .return:before {
-        clear: both;
-        content: "Returns"
-      }
-      
-      .return>p {
-        margin-left: 85px;
-        margin-top: -18px;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 11pt;
-        display: block;
-        padding-bottom: 5px;
-        font-weight: 500;
-      }
-	  
+.return {
+  background-color: gold;
+}
+
+.return:before {
+  clear: both;
+  content: "Returns"
+}
+
+.return>p {
+  margin-left: 85px;
+  margin-top: -18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 11pt;
+  display: block;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+
+code>xmp {
+  margin-top: 0;
+  color: white;
+  font-size: 10pt;
+  background-color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 xmp {
   background-color: black;
   color: white;
@@ -155,6 +166,10 @@ xmp {
   margin-top: 0;
   margin-left: 10px;
   margin-right: 20px;
+}
+
+pre {
+  margin-top: 0
 }
 
 div.breadcrumb {
