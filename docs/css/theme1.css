@@ -169,7 +169,28 @@ xmp {
 }
 
 pre {
-  margin-top: 0
+  margin-top: 0;
+  font-family: 'Arial';
+  font-size: 9pt;
+}
+
+article {
+  margin-top: 50px;
+}
+
+table.compare {
+  border: solid 2px gray;
+  border-collapse: collapse;
+}
+
+table.compare>tbody>tr>th {
+  border: solid 1px gray;
+  padding: 3px;
+}
+
+table.compare>tbody>tr>td {
+  border: solid 1px gray;
+  padding: 3px;
 }
 
 div.breadcrumb {
